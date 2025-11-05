@@ -14,6 +14,7 @@ import "./tasks/FHECounter";
 import "./tasks/CivicVoiceFeedback";
 
 // Run 'npx hardhat vars setup' to see the list of variables that need to be set
+// Configure network settings and deployment parameters here
 
 const MNEMONIC: string = vars.get("MNEMONIC", "test test test test test test test test test test test junk");
 const INFURA_API_KEY: string = vars.get("INFURA_API_KEY", "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz");
