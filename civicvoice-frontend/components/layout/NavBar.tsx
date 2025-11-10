@@ -10,6 +10,10 @@ import { DensityToggle } from './DensityToggle';
 import { RelayerStatusBadge } from '../status/RelayerStatusBadge';
 import { WalletStatus } from '../wallet/WalletStatus';
 
+/**
+ * Navigation links configuration
+ * @type {Array<{ href: Route; label: string }>}
+ */
 const links: Array<{ href: Route; label: string }> = [
   { href: '/' as Route, label: 'Home' },
   { href: '/reports' as Route, label: 'Reports' },
