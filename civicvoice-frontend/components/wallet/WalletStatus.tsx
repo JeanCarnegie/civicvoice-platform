@@ -6,8 +6,9 @@ import { useWallet } from '@/hooks/useWalletContext';
 
 /**
  * Truncates Ethereum address for display
- * @param address - Full Ethereum address
+ * @param address - Full Ethereum address (0x-prefixed hex string)
  * @returns Truncated address (first 6 + last 4 chars)
+ * @example truncateAddress('0x1234567890abcdef1234567890abcdef12345678') // '0x1234…5678'
  */
 function truncateAddress(address: string) {
   return `${address.slice(0, 6)}…${address.slice(-4)}`;
