@@ -18,6 +18,13 @@ export function resolveCivicVoiceDeployment(chainId?: number): CivicVoiceDeploym
     return CivicVoiceFeedbackAddresses[key];
 }
 
+/**
+ * Creates a CivicVoice contract instance for the specified chain
+ * @param runner - Contract runner (provider or signer)
+ * @param chainId - Ethereum chain ID
+ * @returns Contract instance
+ * @throws Error if deployment not found for the chain ID
+ */
 export function createCivicVoiceContract(runner: ContractRunner, chainId: number): Contract {
     const deployment = resolveCivicVoiceDeployment(chainId);
     if (!deployment) {

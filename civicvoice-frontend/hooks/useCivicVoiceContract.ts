@@ -18,6 +18,8 @@ const FIRST_DEPLOYED_CHAIN = Object.keys(CivicVoiceFeedbackAddresses)[0]
 /**
  * Hook to access CivicVoice contract instance
  * Automatically resolves deployment based on current chain ID
+ * 
+ * @returns Contract instance, deployment info, and wallet state
  */
 export function useCivicVoiceContract() {
   const { reader, signer, wallet } = useEthersProviders();
