@@ -3,6 +3,8 @@ import type { NextConfig } from "next";
 /**
  * Next.js configuration for static export
  * Required for FHEVM WASM modules and Relayer SDK compatibility
+ * 
+ * @see https://nextjs.org/docs/app/api-reference/next-config-js
  */
 const nextConfig: NextConfig = {
   reactStrictMode: true,
