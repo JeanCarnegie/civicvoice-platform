@@ -12,6 +12,8 @@ import { useWallet } from '@/hooks/useWalletContext';
 /**
  * Home page client component
  * Displays encrypted satisfaction snapshots and system status
+ * 
+ * @component
  */
 export function HomeClient() {
   const wallet = useWallet();
